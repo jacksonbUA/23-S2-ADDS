@@ -9,6 +9,6 @@ class Move {
     public:
     Move();
     virtual int doIWin(std::string OpponentMove) = 0;
-    std::string getMove();
+    std::string getName();
 };
 #endif
