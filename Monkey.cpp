@@ -18,6 +18,6 @@ int Monkey::doIWin(std::string OpponentMove) {
     } 
 
     else {
-        return nullptr;
+        return 11; //undefined behaviour
     }
 }
