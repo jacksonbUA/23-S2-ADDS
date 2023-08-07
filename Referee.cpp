@@ -5,55 +5,24 @@
 Referee::Referee() {}
 
 Player * Referee::refGame(Player * player1, Player * player2) {
-    char p1 = player1->makeMove();
-    char p2 = player2->makeMove();
-
-    if (p1 == 'R') {
-
-        if (p2 == 'R') {
-            return nullptr;
-        }
-
-        else if (p2 == 'P') {
-            return player2;
-        }
-
-        else if (p2 == 'S') {
+    Move * p1 = player1->makeMove();
+    Move * p2 = player2->makeMove();
+    
+    switch(p1->doIWin(p2->getMove())) {
+        case 1:
             return player1;
-        }
-
-    }
-
-    else if (p1 == 'P') {
-
-        if (p2 == 'R') {
-            return player1;
-        }
-
-        else if (p2 == 'P') {
-            return nullptr;
-        }
-
-        else if (p2 == 'S') {
+            break;
+        case 0:
             return player2;
-        }
-
-    }
-
-    else if (p1 == 'S') {
-
-         if (p2 == 'R') {
-            return player2;
-        }
-
-        else if (p2 == 'P') {
-            return player1;
-        }
-
-        else if (p2 == 'S') {
+            break;
+        case -1:
             return nullptr;
-        }
-
+            break;  
     }
+    
+
+    
+
+    
 
 }

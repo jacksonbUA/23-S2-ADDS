@@ -1,0 +1,15 @@
+#ifndef PIRATE_H
+#define PIRATE_H
+
+#include "Move.h"
+
+class Pirate: public Move {
+
+    private:
+    int doIWin(std::string OpponentMove);
+
+    public:
+    Pirate();
+
+};
+#endif

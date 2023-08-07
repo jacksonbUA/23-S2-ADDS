@@ -1,4 +1,5 @@
 #include "Human.h"
+#include "MoveManager.h"
 #include <iostream>
 
 Human::Human() {
@@ -9,10 +10,11 @@ Human::Human(std::string name) {
     this->name = name;
 }
 
-char Human::makeMove() {
-    char move;
+Move * Human::makeMove() {
+    MoveManager * m = new MoveManager;
+    std::string move;
     std::cout << "Enter move: ";
     std:: cin >> move;
-    return move;
+    return m->createMove(move);
 
 }
