@@ -4,7 +4,7 @@ Robot::Robot() {
     this->moveName = "Robot";
 };
 
-int Robot::doIWin(std::string OpponentMove) {
+int Robot::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Ninja" || OpponentMove == "Zombie") {
         return 1;
     }

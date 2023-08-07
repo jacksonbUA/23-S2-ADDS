@@ -10,7 +10,5 @@ Move * Computer::makeMove() {
     return m->createMove("Rock");
 }
 
-std::string Computer::getName() {
-    return this->name;
-}
+
 

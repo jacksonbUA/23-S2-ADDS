@@ -2,7 +2,7 @@
 
 Paper::Paper() {};
 
-int Paper::doIWin(std::string OpponentMove) {
+int Paper::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Rock") {
         return 1;
     }

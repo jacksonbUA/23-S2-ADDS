@@ -4,7 +4,7 @@ Scissors::Scissors() {
     this->moveName = "Scissors";
 };
 
-int Scissors::doIWin(std::string OpponentMove) {
+int Scissors::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Rock") {
         return 0;
     }

@@ -4,7 +4,7 @@ Monkey::Monkey() {
     this->moveName = "Monkey";
 };
 
-int Monkey::doIWin(std::string OpponentMove) {
+int Monkey::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Ninja" || OpponentMove == "Robot") {
         return 1;
     }

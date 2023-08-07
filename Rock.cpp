@@ -4,7 +4,7 @@ Rock::Rock() {
     this->moveName = "Rock";
 };
 
-int Rock::doIWin(std::string OpponentMove) {
+int Rock::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Rock") {
         return -1;
     }

@@ -6,7 +6,7 @@
 class Scissors: public Move {
 
     private:
-    int doIWin(std::string OpponentMove);
+    int checkWin(std::string OpponentMove);
 
     public:
     Scissors();

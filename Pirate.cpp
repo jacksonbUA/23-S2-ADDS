@@ -4,7 +4,7 @@ Pirate::Pirate() {
     this->moveName = "Pirate";
 };
 
-int Pirate::doIWin(std::string OpponentMove) {
+int Pirate::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Robot" || OpponentMove == "Monkey") {
         return 1;
     }

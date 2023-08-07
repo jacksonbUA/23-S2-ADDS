@@ -4,7 +4,7 @@ Zombie::Zombie() {
     this->moveName = "Zombie";
 };
 
-int Zombie::doIWin(std::string OpponentMove) {
+int Zombie::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Pirate" || OpponentMove == "Monkey") {
         return 1;
     }

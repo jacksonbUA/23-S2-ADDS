@@ -5,11 +5,11 @@
 #include <string>
 
 class Computer: public Player {
-
+    
     public:
     Computer();
     Move * makeMove();
-    std::string getName();
+   
 
 
 

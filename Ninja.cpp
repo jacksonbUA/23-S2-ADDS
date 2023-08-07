@@ -4,7 +4,7 @@ Ninja::Ninja() {
     this->moveName = "Ninja";
 };
 
-int Ninja::doIWin(std::string OpponentMove) {
+int Ninja::checkWin(std::string OpponentMove) {
     if (OpponentMove == "Pirate" || OpponentMove == "Zombie") {
         return 1;
     }
