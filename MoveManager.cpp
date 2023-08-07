@@ -8,9 +8,7 @@
 #include "Ninja.h"
 #include "Robot.h"
 
-MoveManager::MoveManager() {
-    std::cout << "Move Manager created.";
-}
+MoveManager::MoveManager() {}
 
 Move * MoveManager::createMove(std::string move) {
     if (move == "Rock") {
