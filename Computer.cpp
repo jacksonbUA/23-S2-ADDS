@@ -1,11 +1,13 @@
 #include "Computer.h" 
+#include "MoveManager.h"
 
 Computer::Computer() {
     this->name = "Computer";
 }
 
-char Computer::makeMove() {
-    return 'R';
+Move * Computer::makeMove() {
+    MoveManager * m = new MoveManager;
+    return m->createMove("Rock");
 }
 
 std::string Computer::getName() {
