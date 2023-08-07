@@ -17,5 +17,9 @@ int Rock::doIWin(std::string OpponentMove) {
         return 1;
     } 
 
+    else {
+        return 11; //undefined behaviour
+    }
+
 }
 

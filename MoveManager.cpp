@@ -44,4 +44,7 @@ Move * MoveManager::createMove(std::string move) {
     else if(move == "Zombie") {
         return new Zombie();
     } 
+    else {
+        return nullptr; //undefined behaviour
+    }
 }

@@ -16,4 +16,8 @@ int Monkey::doIWin(std::string OpponentMove) {
     else if (OpponentMove == "Monkey") {
         return -1;
     } 
+
+    else {
+        return nullptr;
+    }
 }

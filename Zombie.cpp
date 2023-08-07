@@ -16,4 +16,8 @@ int Zombie::doIWin(std::string OpponentMove) {
     else if (OpponentMove == "Zombie") {
         return -1;
     } 
+
+    else {
+        return 11; //undefined behaviour
+    }
 }

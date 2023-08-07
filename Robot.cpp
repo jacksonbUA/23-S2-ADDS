@@ -16,4 +16,8 @@ int Robot::doIWin(std::string OpponentMove) {
     else if (OpponentMove == "Robot") {
         return -1;
     } 
+
+    else {
+        return 11; //undefined behaviour
+    }
 }

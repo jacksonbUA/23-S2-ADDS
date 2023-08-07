@@ -15,4 +15,8 @@ int Paper::doIWin(std::string OpponentMove) {
         return 0;
     } 
 
+    else {
+        return 11; //undefined behaviour
+    }
+
 }

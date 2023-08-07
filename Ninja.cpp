@@ -16,4 +16,8 @@ int Ninja::doIWin(std::string OpponentMove) {
     else if (OpponentMove == "Ninja") {
         return -1;
     } 
+
+    else {
+        return 11; //undefined behaviour
+    }
 }

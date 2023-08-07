@@ -16,4 +16,8 @@ int Pirate::doIWin(std::string OpponentMove) {
     else if (OpponentMove == "Pirate") {
         return -1;
     } 
+
+    else {
+        return 11; //undefined behaviour
+    }
 }

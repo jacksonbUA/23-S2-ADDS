@@ -18,6 +18,8 @@ Player * Referee::refGame(Player * player1, Player * player2) {
         case -1:
             return nullptr;
             break;  
+        default:
+            return nullptr;
     }
     
 
