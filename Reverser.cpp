@@ -16,6 +16,11 @@
     }
 
     int Reverser::reverseDigit(int value) {
+
+        if (value < 0) {
+            return -1;
+        }
+
         return reverseDigitHelper (value, std::to_string(value).length());
         
     }
