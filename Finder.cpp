@@ -8,7 +8,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
   int s2_remaining = s2.length();
   for (size_t i = 0; i < s1_length ; i++) {
 
-    size_t found = s1.find(s2.substr(0, s2_index));
+    size_t found = s1.substr(i,s1_length).find(s2.substr(0, s2_index));
 
     if (found != string::npos) {
       result.push_back(found);
