@@ -5,21 +5,33 @@
 
 #include <vector>
 #include <iostream>
+#include <string>
 int main() {
+    std::string input;
+    std::vector<int> list;
+    getline(std::cin, input);
 
-    std::vector<int> list {1, 3, 5, 4, -5, 100, 7777, 2014};
+    for (int i = 0; i < input.length(); i++) {
+        if (isdigit(input[i])) {
+            list.push_back(input[i] - '0');
+        }
+    }
 
     //quick sort is currently not implemented correctly, sorted with bubble sort instead
 
     BubbleSort b;
     std::vector<int> sorted_list = b.sort(list);
     RecursiveBinarySearch r;
-    std::cout << r.search(sorted_list, 2015);   
+
+    if (r.search(sorted_list, 1)) {
+        std::cout << "true ";
+    }
+    else {
+        std::cout << "false ";   
+    }
+  
 
     for (size_t i = 0; i < sorted_list.size(); i++) {
         std::cout << " " << list[i];
     }
-
-
-
 }
