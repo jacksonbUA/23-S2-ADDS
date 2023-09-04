@@ -12,7 +12,14 @@ int main() {
     std::vector<int> list;
     getline(std::cin, input);
 
-    for (int i = 0; i < input.length(); i++) {
+
+        for (int i = 0; i < input.length(); i++) {
+
+        if(input[i] == '-') {
+            buffer = "-";
+            i++;
+        }
+
         while (isdigit(input[i])) {
             buffer.push_back(input[i]);
             i++;
@@ -21,6 +28,7 @@ int main() {
             buffer = "";
     }
 
+
     //quick sort is currently not implemented correctly, sorted with bubble sort instead
 
     BubbleSort b;
@@ -28,10 +36,10 @@ int main() {
     RecursiveBinarySearch r;
 
     if (r.search(sorted_list, 1)) {
-        std::cout << "true ";
+        std::cout << "true";
     }
     else {
-        std::cout << "false ";   
+        std::cout << "false";   
     }
   
 
