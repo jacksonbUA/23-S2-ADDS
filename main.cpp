@@ -8,13 +8,17 @@
 #include <string>
 int main() {
     std::string input;
+    std::string buffer;
     std::vector<int> list;
     getline(std::cin, input);
 
     for (int i = 0; i < input.length(); i++) {
-        if (isdigit(input[i])) {
-            list.push_back(input[i] - '0');
+        while (isdigit(input[i])) {
+            buffer.push_back(input[i]);
+            i++;
         }
+            list.push_back(std::stoi(buffer));
+            buffer = "";
     }
 
     //quick sort is currently not implemented correctly, sorted with bubble sort instead
