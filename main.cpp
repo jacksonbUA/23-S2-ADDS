@@ -44,6 +44,6 @@ int main() {
   
 
     for (size_t i = 0; i < sorted_list.size(); i++) {
-        std::cout << " " << list[i];
+        std::cout << " " << sorted_list[i];
     }
 }
