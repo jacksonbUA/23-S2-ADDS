@@ -5,11 +5,13 @@ Node::Node() {
 }
 
 Node::Node(int data) {
+  this->link = nullptr;
   this->data = data;
 }
 
 Node::Node(int data, Node* link) {
   this->data = data;
+  this->link = link;
 }
 
 void Node::setLink(Node* link) {
@@ -22,4 +24,8 @@ Node* Node::getLink() {
 
 int Node::getData() {
   return this->data;
+}
+
+Node::~Node() {
+  
 }

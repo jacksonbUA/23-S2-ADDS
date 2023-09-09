@@ -11,6 +11,7 @@ class Node {
   Node();
   Node(int data);
   Node(int data, Node* link);
+  ~Node();
   void setLink(Node* link);
   Node* getLink();
   int getData();
