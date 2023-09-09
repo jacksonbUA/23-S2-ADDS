@@ -130,14 +130,13 @@ void LinkedList::printList() {
 //Deletes nodes 1 by 1 while traversing by maintaining a pointer to the next node that delete_node can hoist to
 
 LinkedList::~LinkedList() {
-
   Node* traversed_node = this->head->getLink();
   Node* delete_node = this->head;
 
   while(traversed_node->getLink() != nullptr) {
     delete delete_node;
     delete_node = traversed_node;
-    traversed_node = this->head->getLink();
+    traversed_node = traversed_node->getLink();
   }
 
 }
