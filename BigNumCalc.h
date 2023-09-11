@@ -4,7 +4,7 @@
 #include <string>
 #include <list>
 
-class bigNumCalc {
+class BigNumCalc {
 
   private:
 
