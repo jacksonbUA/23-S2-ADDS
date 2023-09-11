@@ -1,4 +1,3 @@
-/*
 #include "bigNumCalc.h"
 
   bigNumCalc::bigNumCalc() {
@@ -53,4 +52,4 @@
   }
   std::list<int> bigNumCalc::sub(std::list<int> num1, std::list<int> num2);
   std::list<int> bigNumCalc::mul(std::list<int> num1, std::list<int> num2);
-*/
+
