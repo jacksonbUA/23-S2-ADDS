@@ -1,9 +1,9 @@
 #include "BigNumCalc.h"
 
-  bigNumCalc::bigNumCalc() {
+  BigNumCalc::BigNumCalc() {
 
   }
-  std::list<int> bigNumCalc::buildBigNum(std::string numString) {
+  std::list<int> BigNumCalc::buildBigNum(std::string numString) {
     
     std::list<int> list_build;
     int string_significance = numString.length();
@@ -19,7 +19,7 @@
 
   }
 
-  std::list<int> bigNumCalc::add(std::list<int> num1, std::list<int> num2) {
+  std::list<int> BigNumCalc::add(std::list<int> num1, std::list<int> num2) {
     int carry_over = 0;
     std::list<int> sum;
     std::list<int>* big_list;
@@ -36,20 +36,11 @@
     }
 
 
-    for (auto it_big = num1.end(); it_big != num1.begin(); it_big--) {
 
-      sum.push_front(*it_big);  
-
-    }
-
-    auto it_sum = sum.end();
-    for (auto it_small = num2.end(); it_small != num2.begin(); it_small--) {
-      
-      sum
-
-    }
 
   }
-  std::list<int> bigNumCalc::sub(std::list<int> num1, std::list<int> num2);
-  std::list<int> bigNumCalc::mul(std::list<int> num1, std::list<int> num2);
+  std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
+  }
+  std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
+  }
 
