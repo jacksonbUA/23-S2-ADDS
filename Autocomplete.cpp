@@ -2,12 +2,12 @@
     #include <stack>
     #include <iostream>
 
-    AutoComplete::AutoComplete() {
+    Autocomplete::Autocomplete() {
         this->root = new TrieNode;
         this->root->depth = 0;
         
     }
-    std::vector<std::string> AutoComplete::getSuggestions(std::string partialWord) {
+    std::vector<std::string> Autocomplete::getSuggestions(std::string partialWord) {
         //prefix and null returns
         std::string prefix = "";
         std::vector<std::string> suggestions;
@@ -52,7 +52,7 @@
         return suggestions;
 
     }  
-    void AutoComplete::insert(std::string word) {
+    void Autocomplete::insert(std::string word) {
         TrieNode *traverse = this->root;
         for (unsigned int i = 0; i < word.length(); i++) {
             if (traverse->children[word[i] - 'a'] == nullptr) {
