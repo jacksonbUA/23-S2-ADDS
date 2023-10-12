@@ -69,7 +69,7 @@ void Heap<T>::remove(T value) {
   for (int i = 0; i < values.size(); i++) {
     if (values[i] == 0) {
       values.erase(values.begin() + i);
-      this->heapify(floor(i - 1 / 2));
+      this->heapify(floor(i / 2));
       break;
     }
   }
