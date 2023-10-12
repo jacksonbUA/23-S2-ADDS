@@ -57,7 +57,7 @@ Heap<T>::Heap(std::vector<T> start_values) {
 template <typename T>
 void Heap<T>::insert(T value) {
   values.push_back(value);
-  this->heapify(values.size());
+  this->heapify(floor(values.size() / 2) - 1);
 }
 
 /*******************************/
@@ -69,7 +69,7 @@ void Heap<T>::remove(T value) {
   for (int i = 0; i < values.size(); i++) {
     if (values[i] == 0) {
       values.erase(values.begin() + i);
-      this->heapify(i);
+      this->heapify(floor(i / 2) - 1);
       break;
     }
   }
