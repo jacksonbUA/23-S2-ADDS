@@ -68,7 +68,7 @@ template <typename T>
 void Heap<T>::remove(T value) {
   for (int i = 0; i < values.size(); i++) {
     if (values[i] == 0) {
-      values.erase(values.begin() + i);
+      values.erase(values.begin() + i - 1);
       this->heapify(floor(i / 2));
       break;
     }
