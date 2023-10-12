@@ -17,9 +17,7 @@ void DocumentManager::addPatron(int patronID) {
 }
 
 int DocumentManager::search(std::string name) {  // returns docid if name is in the document collection or 0 if the name is not in the collection
-    if (this->document_db.count(this->key_db[name])) {
-        return std::get<0>(this->document_db[this->key_db[name]]);
-    }
+    if (this->key_db.count(name)) return this->key_db[name];
     return 0;
 }
 
